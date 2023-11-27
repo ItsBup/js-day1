@@ -14,11 +14,34 @@
             <button class="btn btn-danger btn-lg" onclick="clickReset()" type="reset" value="Reset">RESET</button>
         </div>
     </header>
-    <main>
-<!-- Team Score Boxes -->
+    <main class="container">
+<!-- Team Score Boxes 
+    <span id="userInput"></span>-->
+    <section class="row">
+        <div>
+            <h1>Kanye West Votes:<span id="kVotes"></span></h1>
+        </div>
+        <div>
+            <h1>DJ Khalid Votes:<span id="djVotes"></span></h1>
+        </div>
+    </section>
     </main>
-    <footer>
+    <footer class="container">
 <!-- Point Boxes -->
+        <section class="row justify-content-between m-3">
+            <div class="col-5">
+                <button class="btn btn-primary btn-lg" onclick="click1K()">Kanye +1</button>
+            </div>
+            <div class="col-5">
+                <button class="btn btn-primary btn-lg" onclick="click1DJ()">Khalid +1</button>
+            </div>
+            <div class="col-5">
+                <button class="btn btn-primary btn-lg" onclick="click3K()">Kanye +3</button>
+            </div>
+            <div class="col-5">
+                <button class="btn btn-primary btn-lg" onclick="click3DJ()">Khalid +3</button>
+            </div>
+        </section>
     </footer>
     <script src="app.js"></script>
 </body>
