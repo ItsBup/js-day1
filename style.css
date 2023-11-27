@@ -5,3 +5,17 @@
     
 }
 
+.card{
+    background-color: crimson;
+    padding: 2px;
+}
+.card-img-top{
+    border-radius: 50%;
+}
+.card-body{
+    background-color: crimson;
+}
+.card-text{
+    font-size: 500%;
+    font-weight: bolder;
+}

@@ -22,20 +22,17 @@ function click1DJ(){
     updateDOM()
 }
 
-function click3K(){
-    console.log('3 for Kanye')
-    kVotes += 3
-    updateDOM()
-}
-
-function click3DJ(){
-    console.log('3 for DJ Khalid')
-    djVotes += 3
+function click3(who){
+    console.log('click 3', who)
+    if(who == 'kanye'){
+        kVotes += 3
+    } else {
+        djVotes += 3
+    }
     updateDOM()
 }
 
 function updateDOM(){
     document.getElementById('kVotes').innerText = kVotes
     document.getElementById('djVotes').innerText = djVotes
-
 }
