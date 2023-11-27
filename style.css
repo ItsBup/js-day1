@@ -8,6 +8,7 @@
 .card{
     background-color: crimson;
     padding: 2px;
+    opacity: .95;
 }
 .card-img-top{
     border-radius: 50%;

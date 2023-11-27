@@ -9,12 +9,12 @@
 </head>
 <body class="election-background" onload="updateDOM()">
     <header>
-        <div class="d-flex justify-content-end m-2">
+        <div class="d-flex justify-content-end m-4">
             <button class="btn btn-danger btn-lg" onclick="clickReset()" type="reset" value="Reset">RESET</button>
         </div>
     </header>
     <main class="container bg-primary mt-5" style="--bs-bg-opacity: .75; border-radius: 8px; height: 450px; width: 800px;">
-        <section class="row text-center align-items-stretch justify-content-evenly p-5">
+        <section class="row text-center text-light text-decoration-underline align-items-stretch justify-content-evenly p-5">
             <div class="col-6">
                 <h1>KANYE VOTES</h1>
             </div>
@@ -39,15 +39,19 @@
         <section class="row text-center justify-content-evenly m-3">
             <div class="col-5 p-2">
                 <button class="btn btn-primary btn-lg" onclick="click1K()">Kanye +1</button>
+                <button class="btn btn-primary btn-lg" onclick="badClick1K()">Kanye -1</button>
             </div>
-            <div class="col-5">
+            <div class="col-5 p-2">
                 <button class="btn btn-primary btn-lg" onclick="click1DJ()">Khaled +1</button>
+                <button class="btn btn-primary btn-lg" onclick="badClick1DJ()">Khaled -1</button>
             </div>
-            <div class="col-5">
+            <div class="col-5 p-2">
                 <button class="btn btn-primary btn-lg" onclick="click3('kanye')">Kanye +3</button>
+                <button class="btn btn-primary btn-lg" onclick="badClick3('kanye')">Kanye -3</button>
             </div>
-            <div class="col-5">
+            <div class="col-5 p-2">
                 <button class="btn btn-primary btn-lg" onclick="click3('khaled')">Khaled +3</button>
+                <button class="btn btn-primary btn-lg" onclick="badClick3('khaled')">Khaled -3</button>
             </div>
         </section>
     </footer>
