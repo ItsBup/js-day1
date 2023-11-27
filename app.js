@@ -56,6 +56,12 @@ function badClick3(who){
 }
 
 function updateDOM(){
+    if(kVotes<0){
+        kVotes=0
+    }
+    if(djVotes<0){
+        djVotes=0
+    }
     document.getElementById('kVotes').innerText = kVotes
     document.getElementById('djVotes').innerText = djVotes
 }
