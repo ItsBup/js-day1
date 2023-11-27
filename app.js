@@ -1,6 +1,5 @@
 console.log('hello there')
 
-let string1 = 'string text'
-string1.slice(0, 3)
-
-let turkeysGobbled = 8
+function clickReset(){
+    console.log('reset button clicked')
+}
